@@ -1,0 +1,14 @@
+/*Write a recursive function that calculates the sum of digits of a number. For example, if
+the input is 123, the output should be 6.*/
+#include <stdio.h>
+int func(int n){
+    if (n==0) return 0;
+    else return (n%10)+func(n/10);
+}
+int main(){
+    int n;
+    printf("n : \n");
+    scanf("%d",&n);
+    int s=func(n);
+    printf("sum=%d \n",s);
+}

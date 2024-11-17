@@ -1,0 +1,15 @@
+/*Write a recursive function that takes a string as input and returns the reversed string.*/
+#include <stdio.h>
+#include <string.h>
+void func(char* s,int l){
+    if (l==0) return;
+    else printf("%c",s[l-1]);
+    func(s,l-1);
+}
+int main(){
+    char s[15];
+    printf("string : \n");
+    scanf("%s",s);
+    int l=strlen(s);
+    func(s,l);
+}

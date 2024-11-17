@@ -1,0 +1,20 @@
+/*Write a program that uses structures to manage flight information, including flight
+number, departure city, destination city, date, and available seats. Create functionalities
+to book a seat and display flight details.*/
+#include <stdio.h>
+int main(){
+    struct flight {
+        int fn; //flight number
+        char ds[15]; //departure city
+        char dts[15]; //destination city
+        int as; //availible seats
+    }f1;
+    printf("flight no : \n");
+    scanf("%d",&f1.fn);
+    printf("dept city : \n");
+    scanf("%s",f1.ds);
+    printf("dest city : \n");
+    scanf("%s",f1.dts);
+    f1.as=3;
+    printf("FLIGHT NO : %d \n DEPT CITY : %s \n DEST CITY : %s \n AVAILIBLE SEATS : %d \n",f1.fn,f1.ds,f1.dts,f1.as);
+}
